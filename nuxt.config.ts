@@ -10,6 +10,7 @@ export default defineNuxtConfig({
     '@nuxtjs/google-fonts',
     'nuxt-bootstrap-icons',
     '@formkit/auto-animate/nuxt',
+    '@nuxtjs/supabase',
     '@nuxtjs/i18n',
     'nuxt-vitest',
   ],
@@ -34,6 +35,18 @@ export default defineNuxtConfig({
       Poppins: true,
     },
     display: 'swap',
+  },
+  supabase: {
+    redirect: true,
+    redirectOptions: {
+      login: '/login',
+      callback: '/confirm',
+      include: [
+          'confirm'
+      ],
+      exclude: [],
+      cookieRedirect: true,
+    }
   },
   i18n: {
     baseUrl: 'https://anuness.dev',

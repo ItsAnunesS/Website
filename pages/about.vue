@@ -1,10 +1,11 @@
 <script setup lang="ts">
-const { data } = await useFetch('/api/test')
+const user = useSupabaseUser()
 </script>
 
 <template>
-  <h1>o</h1>
-  <pre>{{ data }}</pre>
+  <pre v-if="user">
+    {{ user }}
+  </pre>
 </template>
 
 <style scoped>

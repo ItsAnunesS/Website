@@ -12,6 +12,7 @@
   },
   "devDependencies": {
     "@nuxtjs/i18n": "next",
+    "@nuxtjs/supabase": "^1.1.7",
     "@nuxtjs/tailwindcss": "latest",
     "@vant/nuxt": "^1.0.4",
     "@vite-pwa/nuxt": "^0.4.0",

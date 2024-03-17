@@ -7,7 +7,6 @@ const localePath = useLocalePath();
 const loading = useLoading();
 const notifications = useNotifications();
 
-
 useHeadSafe({
       link: [
         {
@@ -29,7 +28,7 @@ useHeadSafe({
         },
         {
           rel: "manifest",
-          href: "/site.webmanifest?v=323223",
+          href: "/manifest.webmanifest?v=323223",
         },
         {
           rel: "mask-icon",
