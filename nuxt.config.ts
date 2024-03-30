@@ -12,7 +12,7 @@ export default defineNuxtConfig({
     '@formkit/auto-animate/nuxt',
     '@nuxtjs/supabase',
     '@nuxtjs/i18n',
-    'nuxt-vitest',
+    '@nuxt/test-utils/module',
   ],
   tres: {
     devtools: true,
